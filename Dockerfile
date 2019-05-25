@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 9695
 
-CMD [ "hasura", "console", "--endpoint", "http://graphql-engine:8080" ]
+CMD [ "hasura", "console", "--endpoint", "http://graphql-engine:8080", "--address", "0.0.0.0", "--no-browser" ]
